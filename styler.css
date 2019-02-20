@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+
+header {
+	text-align:center;
+	border:1px solid orange;
+	margin:40px;
+	margin-bottom:5px;
+	padding:20px;
+	background-color:Lightgray;
+	grid-area:header;
+}
+
+#img-div {
+	margin:20px;
+	background-color:white;
+	border:1px solid orange;
+}
+
+#image {
+	margin-left:auto;
+	margin-right:auto;
+	border:1px solid orange;
+	max-width:100%;
+	display:block;
+	height:auto;
+}
+
+#img-caption {
+	font-family: 'Ubuntu Mono', monospace;
+}
+
+#main {
+	display:grid;
+	grid-template-columns:1fr;
+	grif-template-rows:auto auto auto;
+	grid-template-areas:
+		"header"
+		"content"
+		"footer";
+}
+
+#tribute-info {
+	grid-area:content;
+	border:1px solid orange;
+	background-color:Lightgray;
+	padding:20px;
+	margin:40px;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+footer {
+	grid-area:footer;
+	display:grid;
+	grid-template-rows:auto auto;
+	grid-template-columns:auto;
+	border:1px solid orange;
+	background-color:Lightgray;
+	padding:20px;
+	margin:40px;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+.timeline {
+	padding:20px;
+	margin:20px;
+	background-color:white;
+	border:1px solid orange;
+}
+
+.timeline ul {
+	list-style-type:square;
+	padding-left: 80px;
+	padding-right:80px;
+	line-height:20px;
+	font-family:monospace;
+}
+
+#quote {
+	background:white;
+	border:1px solid orange;
+	padding:20px;
+	margin:20px;
+	margin-bottom:5px;
+	text-align:center;
+}
+
+#tribute-link {
+	background:white;
+	border:1px solid orange;
+	padding:20px;
+	margin:20px;
+	margin-top:5px;
+	text-align:center;
+}
+
+#quote::before, #quote::after {
+	content:'"'
+}
